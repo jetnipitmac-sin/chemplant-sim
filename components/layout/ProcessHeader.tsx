@@ -25,7 +25,7 @@ export function ProcessHeader() {
   const { t } = useTranslation();
   const config = useActiveConfig();
   return (
-    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-edge bg-panel/40 px-3 py-2 backdrop-blur lg:flex-nowrap lg:gap-4 lg:px-5 lg:py-2.5">
+    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-edge bg-panel/40 px-3 py-2 backdrop-blur xl:flex-nowrap xl:gap-4 xl:px-5 xl:py-2.5">
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-2">
           <ProcessIcon id={config.id} className="h-5 w-5 shrink-0" style={{ color: config.accent }} />
@@ -36,7 +36,7 @@ export function ProcessHeader() {
         </div>
         <p className="mt-0.5 line-clamp-1 max-w-xl text-xs leading-relaxed text-muted">{t(`process.${config.id}.desc`)}</p>
       </div>
-      <div className="flex flex-wrap items-center justify-end gap-2 lg:flex-nowrap lg:gap-2.5 lg:shrink-0">
+      <div className="flex flex-wrap items-center justify-end gap-2 xl:flex-nowrap xl:gap-2.5 xl:shrink-0">
         <EconomicsTicker />
         <EcoBadge />
         <ViewToggle />

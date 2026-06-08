@@ -56,7 +56,7 @@ export default function Page() {
         <Sidebar open={navOpen} onClose={() => setNavOpen(false)} />
         <div className="flex min-w-0 flex-1 flex-col">
           {/* mobile top bar — drawer toggles (hidden at lg+, so desktop is unchanged) */}
-          <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-edge bg-panel/60 px-3 backdrop-blur lg:hidden">
+          <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-edge bg-panel/60 px-3 backdrop-blur xl:hidden">
             <button onClick={() => setNavOpen(true)} className="btn px-2.5 py-2" aria-label="Open menu">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" className="h-4 w-4">
                 <path d="M4 6h16M4 12h16M4 18h16" />
@@ -85,7 +85,7 @@ export default function Page() {
           <button
             aria-label="Close panels"
             onClick={() => { setNavOpen(false); setPanelOpen(false); }}
-            className="fixed inset-0 z-30 bg-black/50 lg:hidden"
+            className="fixed inset-0 z-30 bg-black/50 xl:hidden"
           />
         )}
         <CopilotPanel />

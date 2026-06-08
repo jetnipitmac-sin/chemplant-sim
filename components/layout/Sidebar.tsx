@@ -15,7 +15,7 @@ export function Sidebar({ open = false, onClose }: { open?: boolean; onClose?: (
     <aside
       className={`fixed inset-y-0 left-0 z-40 flex h-full w-64 max-w-[80vw] shrink-0 flex-col border-r border-edge bg-panel/95 backdrop-blur transition-transform duration-300 ${
         open ? "translate-x-0" : "-translate-x-full"
-      } lg:static lg:z-auto lg:max-w-none lg:translate-x-0 lg:bg-panel/60`}
+      } xl:static xl:z-auto xl:max-w-none xl:translate-x-0 xl:bg-panel/60`}
     >
       <div className="flex h-14 items-center gap-3 border-b border-edge px-4">
         <div className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand/15 text-lg text-brand shadow-glow">⬡</div>
@@ -23,7 +23,7 @@ export function Sidebar({ open = false, onClose }: { open?: boolean; onClose?: (
           <div className="truncate text-sm font-semibold leading-tight">{t("common.appName")}</div>
           <div className="truncate text-[10px] leading-tight text-muted">{t("common.appTagline")}</div>
         </div>
-        <button onClick={onClose} className="shrink-0 px-1 text-muted hover:text-ink lg:hidden" aria-label="Close menu">✕</button>
+        <button onClick={onClose} className="shrink-0 px-1 text-muted hover:text-ink xl:hidden" aria-label="Close menu">✕</button>
       </div>
 
       <div className="px-3 pb-2 pt-4 text-[10px] font-semibold uppercase tracking-wider text-muted">
