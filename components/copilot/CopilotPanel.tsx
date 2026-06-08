@@ -93,7 +93,7 @@ export function CopilotPanel() {
       </button>
 
       {open && (
-        <div className="fixed bottom-20 right-5 z-50 flex h-[30rem] w-[22rem] animate-fade-in flex-col overflow-hidden rounded-xl border border-edge bg-panel shadow-panel">
+        <div className="fixed bottom-20 right-5 z-50 flex h-[30rem] max-h-[75vh] w-[22rem] max-w-[calc(100vw-2.5rem)] animate-fade-in flex-col overflow-hidden rounded-xl border border-edge bg-panel shadow-panel">
           <header className="flex items-center justify-between border-b border-edge px-3 py-2.5">
             <div className="flex items-center gap-2">
               <span className="grid h-7 w-7 place-items-center rounded-lg bg-brand/15 text-brand">🤖</span>

@@ -270,8 +270,8 @@ npm run dev          # http://localhost:3000
 
 **Jetnipit Sinwisitsophon** — Chemical Engineering, Mahidol University
 
-- LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/your-profile)
-- GitHub: [github.com/your-username](https://github.com/your-username)
+- GitHub: [github.com/jetnipitmac-sin](https://github.com/jetnipitmac-sin)
+- Live demo: [chemplant-sim.vercel.app](https://chemplant-sim.vercel.app)
 
 ProSim Studio was designed & developed as an engineering-portfolio project — a config-driven,
 multi-process industrial simulator (3D + DCS/SCADA UI, bilingual EN/TH).

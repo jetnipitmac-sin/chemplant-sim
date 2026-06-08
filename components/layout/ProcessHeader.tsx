@@ -4,6 +4,7 @@ import { useActiveConfig } from "@/store/simStore";
 import { useSimulationStore } from "@/store/simulationStore";
 import { ViewToggle } from "./ViewToggle";
 import { DvrControls } from "./DvrControls";
+import { ProcessIcon } from "@/components/icons/ProcessIcon";
 import { EconomicsTicker, EcoBadge } from "@/components/economics/Economics";
 
 function SafetyBadge() {
@@ -24,10 +25,10 @@ export function ProcessHeader() {
   const { t } = useTranslation();
   const config = useActiveConfig();
   return (
-    <div className="flex items-center justify-between gap-4 border-b border-edge bg-panel/40 px-5 py-2.5 backdrop-blur">
+    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-edge bg-panel/40 px-3 py-2 backdrop-blur lg:flex-nowrap lg:gap-4 lg:px-5 lg:py-2.5">
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-lg">{config.icon}</span>
+          <ProcessIcon id={config.id} className="h-5 w-5 shrink-0" style={{ color: config.accent }} />
           <h2 className="truncate text-base font-semibold" style={{ color: config.accent }}>
             {t(`process.${config.id}.name`)}
           </h2>
@@ -35,7 +36,7 @@ export function ProcessHeader() {
         </div>
         <p className="mt-0.5 line-clamp-1 max-w-xl text-xs leading-relaxed text-muted">{t(`process.${config.id}.desc`)}</p>
       </div>
-      <div className="flex shrink-0 items-center gap-2.5">
+      <div className="flex flex-wrap items-center justify-end gap-2 lg:flex-nowrap lg:gap-2.5 lg:shrink-0">
         <EconomicsTicker />
         <EcoBadge />
         <ViewToggle />
