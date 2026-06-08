@@ -22,7 +22,7 @@ export function RightPanel({ open = false, onClose }: { open?: boolean; onClose?
     <aside
       className={`fixed inset-y-0 right-0 z-40 flex h-full w-[380px] max-w-[85vw] shrink-0 flex-col border-l border-edge bg-base/95 backdrop-blur transition-transform duration-300 ${
         open ? "translate-x-0" : "translate-x-full"
-      } xl:static xl:z-auto xl:max-w-none xl:translate-x-0 xl:bg-base/40 xl:backdrop-blur-none`}
+      } lg:static lg:z-auto lg:max-w-none lg:translate-x-0 lg:bg-base/40 lg:backdrop-blur-none`}
     >
       <div className="flex h-12 shrink-0 items-center gap-1 border-b border-edge px-3">
         {TABS.map((k) => (
@@ -39,7 +39,7 @@ export function RightPanel({ open = false, onClose }: { open?: boolean; onClose?
             )}
           </button>
         ))}
-        <button onClick={onClose} className="ml-1 shrink-0 px-1.5 text-muted hover:text-ink xl:hidden" aria-label="Close panel">✕</button>
+        <button onClick={onClose} className="ml-1 shrink-0 px-1.5 text-muted hover:text-ink lg:hidden" aria-label="Close panel">✕</button>
       </div>
       <div className="min-h-0 flex-1 space-y-3 overflow-y-auto p-3">
         {tab === "simulate" && (
